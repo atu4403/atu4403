@@ -2,7 +2,7 @@
 
 atu4403の個人情報満載リポジトリ
 
-## works
+## works - 制作物一覧
 
 ### PyPI
 - [remind\-task · PyPI](https://pypi.org/project/remind-task/): 通知を繰り返すCLIアプリケーション。macOS専用
@@ -11,3 +11,6 @@ atu4403の個人情報満載リポジトリ
 
 ### GitHub Actions
 - [poetry setup multi platform](https://github.com/marketplace/actions/poetry-setup-multi-platform): poetryをインストールしてpathを設定する
+
+### Tests
+- [atu4403/pytest\_spec](https://github.com/atu4403/pytest_spec): pytestで詰まった所の解決法。主にmock関係
