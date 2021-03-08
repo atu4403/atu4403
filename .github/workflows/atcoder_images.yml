@@ -1,0 +1,31 @@
+# on:
+#   schedule:
+#   - cron: 0 0 * * *
+on:
+  push:
+jobs:
+  scraping:
+    runs-on: ubuntu-latest
+    services:
+      selenium:
+        image: selenium/standalone-chrome:3.141.59-vanadium
+        ports:
+          - 4444:4444
+        volumes:
+          - /dev/shm:/dev/shm
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install selenium
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium
+      - name: generate images
+        env:
+          - ATCODER_USERNAME: atu4403
+          - ATCODER_STATUS_PATH: images/at_status.png
+          - ATCODER_GRAPH_PATH: images/at_graph.png
+        run: |
+          python atcoder_images.py
