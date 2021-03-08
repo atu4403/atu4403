@@ -15,7 +15,7 @@ driver = webdriver.Remote(
     options=options,
 )
 driver.get(f"https://atcoder.jp/users/{USERNAME}")
-driver.implicitly_wait(10)
+driver.implicitly_wait(30)
 png1 = driver.find_element_by_id("ratingStatus").screenshot_as_png
 png2 = driver.find_element_by_id("ratingGraph").screenshot_as_png
 pathlib.Path(PATH1).write_bytes(png1)
