@@ -14,3 +14,9 @@ atu4403の個人情報満載リポジトリ
 
 ### Tests
 - [atu4403/pytest\_spec](https://github.com/atu4403/pytest_spec): pytestで詰まった所の解決法。主にmock関係
+
+### AtCoder
+
+![ATCODER_STATUS](images/at_status.png)
+
+![ATCODER_GRAPH](images/at_graph.png)
