@@ -24,8 +24,8 @@ jobs:
           pip install selenium
       - name: generate images
         env:
-          - ATCODER_USERNAME: atu4403
-          - ATCODER_STATUS_PATH: images/at_status.png
-          - ATCODER_GRAPH_PATH: images/at_graph.png
+          ATCODER_USERNAME: atu4403
+          ATCODER_STATUS_PATH: images/at_status.png
+          ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
           python atcoder_images.py
