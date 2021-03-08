@@ -32,7 +32,7 @@ jobs:
       - name: git setting
         run: |
           git config --local user.email "73111778+atu4403@users.noreply.github.com"
-          git config --local user.name ${{GITHUB_ACTOR}}
+          git config --local user.name "${{GITHUB_ACTOR}}"
       - name: Commit files
         run: |
           git add .
