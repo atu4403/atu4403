@@ -28,7 +28,10 @@ jobs:
           ATCODER_STATUS_PATH: images/at_status.png
           ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
+          pwd
+          ls -la
           python atcoder_images.py
+          ls -la images
       - uses: EndBug/add-and-commit@v7
         with:
           author_name: github-actions
