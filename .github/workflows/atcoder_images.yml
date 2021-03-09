@@ -29,10 +29,8 @@ jobs:
           ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
           python atcoder_images.py
-      - name: Archive images
-        uses: actions/upload-artifact@v2
+      - uses: EndBug/add-and-commit@v7
         with:
-          name: png
-          path: |
-            $env:ATCODER_STATUS_PATH
-            $env:ATCODER_GRAPH_PATH
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: 'update AtCoder images'
