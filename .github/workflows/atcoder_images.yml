@@ -34,5 +34,5 @@ jobs:
         with:
           name: png
           path: |
-            $ATCODER_STATUS_PATH
-            $ATCODER_GRAPH_PATH
+            ${{ATCODER_STATUS_PATH}}
+            ${{ATCODER_GRAPH_PATH}}
