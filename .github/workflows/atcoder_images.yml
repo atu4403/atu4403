@@ -29,13 +29,10 @@ jobs:
           ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
           python atcoder_images.py
-      - name: git setting
-        run: |
-          git config --local user.email "73111778+atu4403@users.noreply.github.com"
-          git config --local user.name "atu4403"
-      - name: Commit files
-        run: |
-          git add .
-          git commit -m "update atcoder images" -a
-          git pull
-          git push origin master
+      - name: Archive images
+        uses: actions/upload-artifact@v2
+        with:
+          name: png
+          path: |
+            $ATCODER_STATUS_PATH
+            $ATCODER_GRAPH_PATH
