@@ -20,3 +20,5 @@ atu4403の個人情報満載リポジトリ
 ![ATCODER_STATUS](images/at_status.png)
 
 ![ATCODER_GRAPH](images/at_graph.png)
+
+(last update: )
