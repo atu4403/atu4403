@@ -30,6 +30,7 @@ jobs:
         run: |
           git status
           python atcoder_images.py
+          python update.py
           git status
       - uses: EndBug/add-and-commit@v7
         with:
