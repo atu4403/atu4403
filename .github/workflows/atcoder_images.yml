@@ -28,10 +28,8 @@ jobs:
           ATCODER_STATUS_PATH: images/at_status.png
           ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
-          git status
           python atcoder_images.py
           python update.py
-          git status
       - name: commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
