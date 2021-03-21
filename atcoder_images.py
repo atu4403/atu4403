@@ -1,5 +1,6 @@
 import os
 import pathlib
+import time
 from selenium import webdriver
 
 USERNAME = os.environ.get("ATCODER_USERNAME")
@@ -16,6 +17,7 @@ driver = webdriver.Remote(
 )
 driver.get(f"https://atcoder.jp/users/{USERNAME}")
 driver.implicitly_wait(30)
+time.sleep(10)
 png1 = driver.find_element_by_id("ratingStatus").screenshot_as_png
 png2 = driver.find_element_by_id("ratingGraph").screenshot_as_png
 pathlib.Path(PATH1).write_bytes(png1)
