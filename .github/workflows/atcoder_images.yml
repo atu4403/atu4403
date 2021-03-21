@@ -1,7 +1,6 @@
 on:
   schedule:
-    - cron: 24 14 * * SUN
-    - cron: 24 14 * * SAT
+    - cron: 24 14 * * SAT,SUN
   push:
 jobs:
   atcoder_images:
