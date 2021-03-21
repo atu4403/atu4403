@@ -32,8 +32,10 @@ jobs:
           python atcoder_images.py
           python update.py
           git status
-      - uses: EndBug/add-and-commit@v7
-        with:
-          author_name: github-actions
-          author_email: github-actions@github.com
-          message: 'update AtCoder images'
+      - name: commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add .
+          git commit -m 'update images'
+          git push origin master
