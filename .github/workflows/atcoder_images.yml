@@ -15,8 +15,6 @@ jobs:
           - /dev/shm:/dev/shm
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
@@ -30,16 +28,13 @@ jobs:
           ATCODER_STATUS_PATH: images/at_status.png
           ATCODER_GRAPH_PATH: images/at_graph.png
         run: |
+          git status
           python atcoder_images.py
           python update.py
-      - name: commit & push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git add -N .
-          if ! git diff --exit-code --quiet
-          then
-            git add .
-            git commit -m "Update images"
-            git push origin master
-          fi
+          git status
+      - uses: EndBug/add-and-commit@v7
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: 'update AtCoder images'
+          pull_strategy: 'NO-PULL'
