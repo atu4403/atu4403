@@ -1,7 +1,15 @@
 import os
 import pathlib
-import time
 from selenium import webdriver
+import base64
+
+
+def to_bytes(elid):
+    sc = "return arguments[0].toDataURL('image/png').substring(21);"
+    el = driver.find_element_by_id(elid)
+    b64 = driver.execute_script(sc, el)
+    return base64.b64decode(b64)
+
 
 USERNAME = os.environ.get("ATCODER_USERNAME")
 assert USERNAME, "Is required env.ATCODER_USERNAME"
@@ -17,9 +25,9 @@ driver = webdriver.Remote(
 )
 driver.get(f"https://atcoder.jp/users/{USERNAME}")
 driver.implicitly_wait(30)
-time.sleep(10)
-png1 = driver.find_element_by_id("ratingStatus").screenshot_as_png
-png2 = driver.find_element_by_id("ratingGraph").screenshot_as_png
-pathlib.Path(PATH1).write_bytes(png1)
-pathlib.Path(PATH2).write_bytes(png2)
+# time.sleep(10)
+# png1 = driver.find_element_by_id("ratingStatus").screenshot_as_png
+# png2 = driver.find_element_by_id("ratingGraph").screenshot_as_png
+pathlib.Path(PATH1).write_bytes(to_bytes("ratingStatus"))
+pathlib.Path(PATH2).write_bytes(to_bytes("ratingGraph"))
 driver.quit()
