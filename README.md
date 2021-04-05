@@ -21,7 +21,6 @@ atu4403の個人情報満載リポジトリ
 
 ![ATCODER_GRAPH](images/at_graph.png)
 
-(last update: 2021-03-21 16:14:15)
 
 <div style="background-color:#FFFFFF">
   <img src="images/at_status.png">
