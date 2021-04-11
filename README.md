@@ -26,6 +26,7 @@ atu4403の個人情報満載リポジトリ
 - [images](https://github.com/atu4403/images): netlifyを使った個人用画像サーバー
 - [moncoll](https://github.com/atu4403/moncoll): pythonのmongodbラッパー(pypi未登録)
 - [poetry-setup-multi-platform](https://github.com/atu4403/poetry-setup-multi-platform): GitHub Actionsでpoetryを使えるようにする
+- [profile_build_tools](https://github.com/atu4403/profile_build_tools): GitHubのProfileページのREADMEを自動更新する
 - [pytest_spec](https://github.com/atu4403/pytest_spec): pytestの使い方メモ
 - [remind_task](https://github.com/atu4403/remind_task): macosで通知を繰り返すCLIアプリケーション
 - [timeit2](https://github.com/atu4403/timeit2): pythonの処理時間を計測
