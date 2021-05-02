@@ -11,6 +11,7 @@ atu4403の個人情報満載リポジトリ
 
 
 ### qiita
+- [[python] 仮想通貨APIからローソク足チャートを作る簡単な方法](https://qiita.com/atu4403/items/42d64c9fa9302cfa6c8a): 2021-05-01
 - [使っていないPCをサーバー化してみた](https://qiita.com/atu4403/items/6ea6721f00c477dcca5b): 2020-12-28
 - [APIをお手軽にコマンド化する方法](https://qiita.com/atu4403/items/35a9bfac0e0bccb2b403): 2020-12-15
 - [奇数判定とbit演算子](https://qiita.com/atu4403/items/36b2a7de126b9d4dbfcb): 2020-12-08
