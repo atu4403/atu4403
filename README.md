@@ -24,9 +24,11 @@ atu4403の個人情報満載リポジトリ
 ### GitHub Repository
 - [adash](https://github.com/atu4403/adash): pythonユーティリティ
 - [atu4403](https://github.com/atu4403/atu4403): atu4403のプロフィール
+- [cookiecutter-simple-poetry](https://github.com/atu4403/cookiecutter-simple-poetry): cookiecutter template
 - [env-paths](https://github.com/atu4403/env-paths): sindresorhus/env-pathsのpython version
 - [images](https://github.com/atu4403/images): netlifyを使った個人用画像サーバー
 - [moncoll](https://github.com/atu4403/moncoll): pythonのmongodbラッパー(pypi未登録)
+- [moncoll2](https://github.com/atu4403/moncoll2): pymongoの薄いラッパー
 - [poetry-setup-multi-platform](https://github.com/atu4403/poetry-setup-multi-platform): GitHub Actionsでpoetryを使えるようにする
 - [profile_build_tools](https://github.com/atu4403/profile_build_tools): GitHubのProfileページのREADMEを自動更新する
 - [pytest_spec](https://github.com/atu4403/pytest_spec): pytestの使い方メモ
