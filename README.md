@@ -33,6 +33,7 @@ atu4403の個人情報満載リポジトリ
 - [poetry-setup-multi-platform](https://github.com/atu4403/poetry-setup-multi-platform): GitHub Actionsでpoetryを使えるようにする
 - [profile_build_tools](https://github.com/atu4403/profile_build_tools): GitHubのProfileページのREADMEを自動更新する
 - [pytest_spec](https://github.com/atu4403/pytest_spec): pytestの使い方メモ
+- [python-specs](https://github.com/atu4403/python-specs): pythonの仕様等を確認する為のリポジトリ
 - [remind_task](https://github.com/atu4403/remind_task): macosで通知を繰り返すCLIアプリケーション
 - [til](https://github.com/atu4403/til): til - Today I learned.
 - [timeit2](https://github.com/atu4403/timeit2): pythonの処理時間を計測
