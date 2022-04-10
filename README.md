@@ -27,6 +27,7 @@ atu4403の個人情報満載リポジトリ
 - [cookiecutter-simple-poetry](https://github.com/atu4403/cookiecutter-simple-poetry): cookiecutter template
 - [env-paths](https://github.com/atu4403/env-paths): sindresorhus/env-pathsのpython version
 - [fish_conf](https://github.com/atu4403/fish_conf): fishの設定ファイル
+- [flask_app_template](https://github.com/atu4403/flask_app_template): poetry + flask + semantic-uiのボイラープレート
 - [images](https://github.com/atu4403/images): netlifyを使った個人用画像サーバー
 - [moncoll](https://github.com/atu4403/moncoll): pythonのmongodbラッパー(pypi未登録)
 - [moncoll2](https://github.com/atu4403/moncoll2): pymongoの薄いラッパー
